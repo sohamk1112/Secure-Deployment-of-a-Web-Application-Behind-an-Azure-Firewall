@@ -17,48 +17,52 @@ Purpose - To create and manage Azure resources.
 Purpose - To group all related resources for easier management and organization.
 Resource - “Resource Group”
 
-3. Virtual Network
+![Screenshot (80)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/5ce710a3-e3db-4857-bc06-168aa0a2fb63)
+
+
+
+4. Virtual Network
 Purpose - To create a private network for the virtual machine.
 Resource - “Virtual Network”
 
-4. Azure Bastion
+5. Azure Bastion
 Purpose - To provide secure and seamless RDP and SSH connectivity to virtual machines without exposing them to the public internet.
 Resource - “Azure Bastion”
 
-5. Public IP Address
+6. Public IP Address
 Purpose - To enable Azure Bastion for secure SSH access.
 Resource - “Public IP Address for Azure Bastion”
 
-6. Azure Firewall
+7. Azure Firewall
 Purpose - To control and filter network traffic to and from the virtual network.
 Resource - “Azure Firewall”
 Tier - Standard
 
-7. Firewall Policy
+8. Firewall Policy
 Purpose: To define access rules for the Azure Firewall.
 Resource: “Firewall Policy”
 
-8. Virtual Machine
+9. Virtual Machine
 Purpose - To host the web application.
 Resource - “Virtual Machine” 
 
-9. OS: Ubuntu Server 20.04 LTS X64 Gen2
+10. OS: Ubuntu Server 20.04 LTS X64 Gen2
 Administrator Account - SSH public key
 Username - “azureuser”
 
-10. SSH Key Pair
+11. SSH Key Pair
 Purpose - For secure SSH access to the virtual machine.
 Resource - “SSH Key Pair”
 
-11. Nginx Web Server
+12. Nginx Web Server
 Purpose - To serve the static website.
 Resource - “Nginx”
 
-12. Firewall DNAT Rules
+13. Firewall DNAT Rules
 Purpose - To configure network address translation and control inbound traffic to the virtual machine.
 Resource - “DNAT Rules” 
 
-13. Rule Collection 
+14. Rule Collection 
 Name - “firewall-nginx-rule”
 Priority - 100
 Source Type - IP address (specific to the user’s PC)
