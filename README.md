@@ -1,6 +1,3 @@
-# Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall
-
-
 # ABSTRACT
 
 This project outlines the deployment of a secure web application behind a firewall on Azure. The key objectives include setting up a virtual network, deploying an Ubuntu virtual machine, configuring Azure Firewall with DNAT rules, and using Azure Bastion for secure access. The project ensures that the web application is accessible only to specific IP addresses, enhancing security.
