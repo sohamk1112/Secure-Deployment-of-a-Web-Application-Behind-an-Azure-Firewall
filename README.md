@@ -74,11 +74,17 @@ Resource - “SSH Key Pair”
 Purpose - To serve the static website.
 Resource - “Nginx”
 
-14. Firewall DNAT Rules
+![Screenshot (89)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/bce905b7-28e0-49b3-9fad-ea9bb5c5765e)
+![Screenshot (88)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/27d19fd0-780c-4744-a999-12fdf0e04962)
+
+
+
+
+15. Firewall DNAT Rules
 Purpose - To configure network address translation and control inbound traffic to the virtual machine.
 Resource - “DNAT Rules” 
 
-15. Rule Collection 
+16. Rule Collection 
 Name - “firewall-nginx-rule”
 Priority - 100
 Source Type - IP address (specific to the user’s PC)
@@ -87,6 +93,9 @@ Protocol - TCP
 Destination Port - 9000
 Translated Address - Private IP address of the virtual machine
 Translated Port – 80
+![Screenshot (87)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/0e40f3bc-da5b-45d4-b288-cd8510e02a5b)
+
+
 
 # RESULTS
 
