@@ -74,8 +74,8 @@ Resource - “SSH Key Pair”
 Purpose - To serve the static website.
 Resource - “Nginx”
 
-![Screenshot (89)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/bce905b7-28e0-49b3-9fad-ea9bb5c5765e)
 ![Screenshot (88)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/27d19fd0-780c-4744-a999-12fdf0e04962)
+![Screenshot (89)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/bce905b7-28e0-49b3-9fad-ea9bb5c5765e)
 
 
 
