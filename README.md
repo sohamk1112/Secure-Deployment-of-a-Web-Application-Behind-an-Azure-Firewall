@@ -26,27 +26,26 @@ Resource - “Virtual Network”
 
 ![Screenshot (81)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/9d13a5ec-8156-4e92-99ca-a6631b89bfd8)
 
+4. Virtual Machine
+Purpose - To host the web application.
+Resource - “Virtual Machine”
 
-4. Azure Bastion
+5. Azure Bastion
 Purpose - To provide secure and seamless RDP and SSH connectivity to virtual machines without exposing them to the public internet.
 Resource - “Azure Bastion”
 
-5. Public IP Address
+6. Public IP Address
 Purpose - To enable Azure Bastion for secure SSH access.
 Resource - “Public IP Address for Azure Bastion”
 
-6. Azure Firewall
+7. Azure Firewall
 Purpose - To control and filter network traffic to and from the virtual network.
 Resource - “Azure Firewall”
 Tier - Standard
 
-7. Firewall Policy
+8. Firewall Policy
 Purpose: To define access rules for the Azure Firewall.
 Resource: “Firewall Policy”
-
-8. Virtual Machine
-Purpose - To host the web application.
-Resource - “Virtual Machine” 
 
 9. OS: Ubuntu Server 20.04 LTS X64 Gen2
 Administrator Account - SSH public key
