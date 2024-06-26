@@ -30,40 +30,55 @@ Resource - “Virtual Network”
 Purpose - To host the web application.
 Resource - “Virtual Machine”
 
-5. Azure Bastion
+![Screenshot (82)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/b2499142-3932-4a81-a981-78c957974695)
+
+
+6. Azure Bastion
 Purpose - To provide secure and seamless RDP and SSH connectivity to virtual machines without exposing them to the public internet.
 Resource - “Azure Bastion”
 
-6. Public IP Address
+![Screenshot (83)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/99d3741c-b517-4929-82a9-a8be44285b74)
+
+
+7. Public IP Address
 Purpose - To enable Azure Bastion for secure SSH access.
 Resource - “Public IP Address for Azure Bastion”
 
-7. Azure Firewall
+
+
+8. Azure Firewall
 Purpose - To control and filter network traffic to and from the virtual network.
 Resource - “Azure Firewall”
 Tier - Standard
 
-8. Firewall Policy
+![Screenshot (84)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/a3742228-3a4c-43f2-a724-becc51681ef0)
+
+
+
+10. Firewall Policy
 Purpose: To define access rules for the Azure Firewall.
 Resource: “Firewall Policy”
 
-9. OS: Ubuntu Server 20.04 LTS X64 Gen2
+![Screenshot (85)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/e8025e6f-bb74-48b8-8a54-9850a88e4524)
+
+
+11. OS: Ubuntu Server 20.04 LTS X64 Gen2
 Administrator Account - SSH public key
 Username - “azureuser”
 
-10. SSH Key Pair
+12. SSH Key Pair
 Purpose - For secure SSH access to the virtual machine.
 Resource - “SSH Key Pair”
 
-11. Nginx Web Server
+13. Nginx Web Server
 Purpose - To serve the static website.
 Resource - “Nginx”
 
-12. Firewall DNAT Rules
+14. Firewall DNAT Rules
 Purpose - To configure network address translation and control inbound traffic to the virtual machine.
 Resource - “DNAT Rules” 
 
-13. Rule Collection 
+15. Rule Collection 
 Name - “firewall-nginx-rule”
 Priority - 100
 Source Type - IP address (specific to the user’s PC)
@@ -76,6 +91,10 @@ Translated Port – 80
 # RESULTS
 
 The deployment was successful, with the web application accessible only from the specified IP addresses. The HTML content served by Nginx was displayed correctly when accessed from allowed IP addresses, demonstrating the effectiveness of the configured DNAT rules. Unauthorized access attempts from other IP addresses were blocked by Azure Firewall.
+
+![Screenshot (86)](https://github.com/sohamk1112/Secure-Deployment-of-a-Web-Application-Behind-an-Azure-Firewall/assets/85565566/3ab4076c-061e-47aa-a55b-4635925ec6e5)
+
+
 
 
 # CONCLUSION
